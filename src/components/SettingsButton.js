@@ -11,7 +11,7 @@ const SettingsButton = () => {
         <FiSettings size={24} />
       </button>
 
-      {/* Options List (Visible when open is true) */}
+      {/* Dropdown Menu (Visible when `open` is true) */}
       {open && (
         <div className="settings-menu">
           <button className="settings-option">

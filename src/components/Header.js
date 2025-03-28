@@ -6,22 +6,33 @@ const Header = () => {
 
   return (
     <div className="header">
-      {/* Left Section: Breadcrumb & Title */}
+      {/* Left Section: Breadcrumb & Page Title */}
       <div className="left">
-        <span className="breadcrumb"> <FaHome /> / Dashboards / Sales</span>
+        <span className="breadcrumb">
+          <FaHome /> / Dashboards / Sales
+        </span>
       </div>
 
       {/* Right Section: Search Bar & Icons */}
       <div className="right">
-        {/* Search Bar (Hidden on Mobile) */}
-        <input type="text" placeholder="Search here" className={`search-bar ${showSearch ? "show" : ""}`} />
+        {/* Search Bar (Visible on Toggle) */}
+        <input
+          type="text"
+          placeholder="Search here"
+          className={`search-bar ${showSearch ? "show" : ""}`}
+        />
 
-        {/* Search Icon for Mobile */}
-        <FaSearch className="icon search-icon" onClick={() => setShowSearch(!showSearch)} />
+        {/* Search Icon for Mobile Toggle */}
+        <FaSearch
+          className="icon search-icon"
+          onClick={() => setShowSearch(!showSearch)}
+        />
 
-        {/* Icons */}
+        {/* User Profile & Settings Icons */}
         <FaUserCircle className="icon" />
         <FaCog className="icon" />
+
+        {/* Notification Icon with Badge */}
         <div className="notification">
           <FaBell className="icon" />
           <span className="badge">9</span>
