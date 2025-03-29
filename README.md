@@ -1,6 +1,4 @@
-Sales Dashboard
-
-This is a **React-based Sales Dashboard** designed to display key business metrics such as **top-selling products, sales data, user demographics, and geographic performance**. It features **interactive charts** and**dynamic tables**.
+This is a **React-based Sales Dashboard** designed to display key business metrics such as **top-selling products, sales data, user demographics, and geographic performance**. It features **interactive charts** and **dynamic tables**.
 
 
 📌 Features
